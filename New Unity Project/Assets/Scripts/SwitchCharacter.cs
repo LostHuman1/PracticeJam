@@ -6,6 +6,7 @@ public class SwitchCharacter : MonoBehaviour
 {
 
 	public GameObject avatar1, avatar2;
+	public GameObject floor, ramp, wall;
 
 	int whichAvatarIsOn = 1;
 
@@ -33,6 +34,9 @@ public class SwitchCharacter : MonoBehaviour
 
 				avatar1.gameObject.SetActive(false);
 				avatar2.gameObject.SetActive(true);
+				wall.gameObject.SetActive(true);
+				floor.gameObject.SetActive(true);
+				ramp.gameObject.SetActive(true);
 				break;
 
 			case 2:
@@ -41,6 +45,9 @@ public class SwitchCharacter : MonoBehaviour
 
 				avatar1.gameObject.SetActive(true);
 				avatar2.gameObject.SetActive(false);
+				wall.gameObject.SetActive(false);
+				floor.gameObject.SetActive(false);
+				ramp.gameObject.SetActive(false);
 				break;
 		}
 
